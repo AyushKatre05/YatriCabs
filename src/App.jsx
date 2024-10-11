@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './Pages/Home';
 import Yatri from './Pages/Yatri';
 import Tablechart from './Components/Tablechart';
