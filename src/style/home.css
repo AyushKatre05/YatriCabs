@@ -1,0 +1,136 @@
+.heading_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0% 1vh 2%;
+    align-items: center;
+}
+
+.heading_img {
+    min-height: 2vh;
+    max-height: 10vh;
+    max-width: 45%;
+    min-width: 1%;
+}
+
+.heading_container img:nth-child(1) {
+    min-height: 2vh;
+    max-height: 6vh;
+    max-width: 23%;
+    min-width: 2%;
+}
+
+.heading_container div img:nth-child(1) {
+    min-height: 2vh;
+    max-height: 9vh;
+    max-width: 50%;
+    min-width: 2%;
+}
+
+.heading_container div img:nth-child(2) {
+    min-height: 2vh;
+    max-height: 9vh;
+    max-width: 33%;
+    min-width: 1%;
+}
+
+.homepage {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 198px;
+}
+
+.homepage img {
+    margin: 0;
+    width: 100%;
+        height: 683px;
+}
+
+.home_container {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    background: linear-gradient(to right, #050505bd 0%, transparent 100%);
+}
+
+
+.heading_back {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin-top: 98.98px;
+    justify-content: center;
+}
+
+.heading {
+    font-weight: 300;
+    /* font-family: Poppins; */
+    font-size: 48.146px;
+    color: aliceblue;
+    text-transform: uppercase;
+    line-height: 57.02px;
+    letter-spacing: 0.03em;
+    margin-top: 103px;
+        width: 539px;
+}
+
+.heading span:nth-child(1) {
+
+    color: rgb(20, 227, 20);
+    font-weight: 600;
+}
+
+.download {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 50px;
+    margin: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+        bottom: -111.02px;
+}
+
+@media screen and (max-width: 800px) {
+    .heading_container {
+      padding: 6px 0 12px 2%;
+    }
+    .homepage {
+      margin-bottom: 10px;
+    }
+    .homepage img {
+      height: 650px;
+    }
+    .home_container {
+      padding: 0 16px;
+      background: linear-gradient(to bottom, #050505bd 0%, transparent 100%);
+    }
+    .heading_back {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    .heading {
+      font-size: 27.11px;
+      line-height: 26.35px;
+      margin-top: 35px;
+      margin-bottom: 25px;
+      width: 294px;
+    }
+    .heading span:nth-child(1) {
+      letter-spacing: 0.5px;
+    }
+    .download {
+      display: none; /* Hides the download button on screens smaller than 800px */
+    }
+    .heading_container div img:nth-child(1) {
+      display: none; /* Hides the first image inside .heading_container div on small screens */
+    }
+  }
+  

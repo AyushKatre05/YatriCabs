@@ -1,0 +1,126 @@
+/* Footer Styles */
+
+.footer_container {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 20px 50px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.footer_logo img {
+  height: 70px; /* Increased logo size */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.footer_links {
+  display: flex; /* Use flexbox to arrange items in a row */
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: center; /* Center the items */
+  gap: 20px; /* Space between the links */
+}
+
+.footer_links div {
+  cursor: pointer; /* Change cursor to pointer for links */
+  text-align: center; /* Center text */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer_links div:hover {
+  color: rgba(20, 227, 20, 1); /* Change color on hover */
+}
+
+
+.footer_newsletter {
+  display: flex;
+  flex-direction: column; /* Stack newsletter title and input/button */
+  align-items: center; /* Center align */
+  gap: 10px; /* Space between elements */
+}
+
+.newsletter_input {
+  display: flex; /* Align input and button horizontally */
+  align-items: center; /* Center align */
+}
+
+.input_footer {
+  border-radius: 20px 0 0 20px;
+  padding: 10px; /* Increased padding for better usability */
+  outline: none;
+  border: 1px solid white;
+  width: 200px; /* Fixed width for input */
+}
+
+.button_next {
+  background-color: white; /* Set background for visibility */
+  color: black; /* Set color for visibility */
+  border: 1px solid white;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 15px; /* Increased padding */
+  cursor: pointer;
+  display: flex; /* Center the icon */
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_copyright {
+  font-size: 12px; /* Slightly smaller font for copyright */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .footer_container {
+    padding: 10px 20px; /* Reduce padding on mobile */
+    gap: 10px; /* Decrease gap on smaller screens */
+  }
+
+  .footer_logo img {
+    height: 50px; /* Adjust logo size for mobile */
+  }
+
+  .footer_links {
+    display: flex; /* Use flexbox to arrange items in a row */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Space between the links */
+  }
+  
+  .footer_links div {
+    cursor: pointer; /* Change cursor to pointer for links */
+    text-align: center; /* Center text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footer_links div:hover {
+    color: rgba(20, 227, 20, 1); /* Change color on hover */
+  }
+  
+
+  .footer_newsletter {
+    flex-direction: column; /* Stack newsletter elements */
+    align-items: center; /* Center align */
+  }
+
+  .newsletter_input {
+    flex-direction: row; /* Keep input and button inline */
+    gap: 5px; /* Space between input and button */
+  }
+
+  .input_footer {
+    width: 150px; /* Adjust input width for mobile */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .button_next {
+    padding: 8px; /* Adjust button padding */
+  }
+
+  .footer_copyright {
+    font-size: 10px; /* Decrease font size for copyright */
+  }
+}
+

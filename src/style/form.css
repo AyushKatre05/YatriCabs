@@ -1,0 +1,375 @@
+.form {
+      width: 850px;
+      height: 400px;
+      background-color: rgba(247, 247, 247, 0.846);
+      border-radius: 20px;
+
+}
+
+.form_button {
+      flex-direction: row;
+      display: flex;
+      gap: 36.74px;
+      margin-top: 35px;
+      justify-content: center;
+
+}
+
+.form_button_small {
+      flex-direction: row;
+      display: flex;
+      gap: 97.43px;
+      margin-top: 25px;
+      margin-bottom: 29px;
+      justify-content: center;
+}
+
+.button {
+      width: 172.25px;
+      height: 49.5px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border: none;
+      cursor: pointer;
+      border: 2px solid rgba(33, 105, 0, 1);
+      color: rgba(160, 160, 160, 1);
+      background-color: rgba(255, 255, 255, 1);
+      font-size: 26.62px;
+      font-weight: 500;
+      font-family: Lato;
+      border-radius: 7.99px;
+      box-shadow: 2px 2px 4px green;
+}
+
+.button_small {
+      width: 146.3px;
+      height: 42.59px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border: none;
+      cursor: pointer;
+      border: 1.6px solid rgba(33, 105, 0, 1);
+      color: rgba(160, 160, 160, 1);
+      background-color: rgba(255, 255, 255, 1);
+      font-size: 19.17px;
+      font-weight: 500;
+      font-family: Lato;
+      border-radius: 7.99px;
+      box-shadow: 2px 2px 4px green;
+      margin-top: 27px;
+}
+
+.button_big {
+      width: 270.24px;
+      height: 42.84px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border: none;
+      cursor: pointer;
+      border: 2px solid rgba(33, 105, 0, 1);
+      background-color: rgba(33, 105, 0, 1);
+      color: rgba(255, 255, 255, 1);
+      font-size: 22.44px;
+      font-weight: 500;
+      font-family: Lato;
+      border-radius: 6.6px;
+      box-shadow: 2px 2px 4px green;
+}
+
+.submit {
+      display: flex;
+      justify-content: center;
+}
+
+.active {
+      background-color: rgba(33, 105, 0, 1);
+      color: rgba(255, 255, 255, 1);
+}
+
+.input_container {
+      position: relative; 
+  }
+  
+  .location_suggestions {
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      width: 100%; 
+      background-color: white;
+      border: 1px solid #ccc;
+      z-index: 1000; 
+      max-height: 150px; 
+      overflow-y: auto; 
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location_option {
+      padding: 8px 10px;
+      cursor: pointer;
+      background-color: white;
+  }
+  
+  .location_option:hover {
+      background-color: #f0f0f0; 
+  }
+  
+
+label {
+      color: rgba(88, 88, 88, 1);
+      display: flex;
+      justify-content: start;
+}
+
+.input_container input {
+      border: none;
+      background-color: rgba(247, 247, 247, 0);
+      width: 100%;
+      border-bottom: 1px solid #000;
+      font-size: 16px;
+      outline: none;
+
+}
+
+.icon {
+      position: absolute;
+      right: 0%;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+}
+
+.form_container {
+      display: flex;
+      flex-direction: row;
+      /* gap: 100px; */
+      margin: 27px 0;
+      justify-content: center;
+}
+
+.arrow {
+      gap: 40px;
+}
+
+.without_arrow {
+      gap: 120px;
+}
+
+.arrow_container svg {
+      color: #00000099;
+}
+
+.arrow_container svg:nth-child(1) {
+      transform: translateY(10px);
+}
+
+
+@media screen and (max-width: 800px) {
+      .form {
+        width: 334.26px;
+        height: auto; 
+      }
+    
+      .form_button {
+        margin-top: 13.76px;
+        gap: 14.45px;
+      }
+    
+      .form_button_small {
+        margin-bottom: 11.4px;
+        margin-top: 0px;
+        gap: 38px;
+      }
+    
+      .button {
+        width: 67.8px;
+        height: 19.47px;
+        border-radius: 3.14px;
+        border-width: 0.63px;
+        font-size: 10.47px;
+      }
+    
+      .button_small {
+        width: 56.53px;
+        height: 16.75px;
+        border-radius: 3.14px;
+        border-width: 0.63px;
+        font-size: 7.54px;
+        margin-top: 10.62px;
+      }
+    
+      .button_big {
+        width: 106.57px;
+        height: 17.23px;
+        border-radius: 2.6px;
+        border-width: 0.52px;
+        font-size: 8.82px;
+      }
+    
+      .form_container {
+        flex-direction: column; /* Change direction to column */
+        align-items: center;
+        margin: 8px 0;
+        gap: 10px; /* Adjust spacing between inputs */
+      }
+    
+      .input_container input {
+        font-size: 10.47px;
+        border-bottom-width: 0.47px;
+        width: 100%; /* Full width */
+      }
+    
+      .arrow {
+        gap: 20px;
+        justify-content: center;
+      }
+    
+      .without_arrow {
+        gap: 20px; /* Reduce gap between inputs */
+        justify-content: center;
+      }
+    
+      label {
+        font-size: 5.56px;
+        width: 100%;
+        text-align: left;
+      }
+    
+      .arrow_container {
+        justify-content: center;
+        margin-top: 5px;
+      }
+    
+      .icon {
+        right: 10px; /* Adjust positioning */
+        font-size: 12px; /* Make the icons smaller */
+      }
+    
+      /* Rotate the first arrow 90 degrees (pointing upwards) */
+      .arrow_container svg:nth-child(1) {
+        transform: rotate(-90deg); /* Arrow pointing upwards */
+        font-size: 12px; /* Smaller icon for mobile */
+      }
+    
+      /* Rotate the second arrow -90 degrees (pointing downwards) */
+      .arrow_container svg:nth-child(2) {
+        transform: rotate(-90deg); /* Arrow pointing downwards */
+        font-size: 12px; /* Smaller icon for mobile */
+      }
+    }
+    
+    
+
+    .form {
+      padding: 20px;
+    }
+    
+    .form_button {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .button {
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .active {
+      background-color: #007bff;
+      color: white;
+    }
+    
+    .form_container {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    
+    .input_container {
+      position: relative;
+      flex-grow: 1;
+    }
+    
+    .icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    
+    .location_suggestions {
+      position: absolute;
+      border: 1px solid #ccc;
+      background: white;
+      z-index: 1;
+    }
+    
+    .location_option {
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .location_option:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .submit {
+      margin-top: 20px;
+    }
+    
+    .button_big {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form_container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+      justify-content: space-between; /* Align items */
+    }
+    
+    .input_container {
+      flex: 1; /* Each input takes equal space */
+      min-width: 250px; /* Ensure minimum width for usability */
+      margin: 5px; /* Add margin for spacing */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .input_container {
+        flex: 100%; /* Stack inputs on small screens */
+      }
+    }
+    
+    .arrow_container {
+      display: flex;
+      align-items: center;
+      margin: 0 10px; /* Adjust spacing between arrows */
+    }
+
+    .trip_option_horizontal {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    
+    .trip_option {
+      display: flex; /* Enable Flexbox */
+      justify-content: space-between; /* Distribute space evenly */
+      margin: 1rem 0; /* Add some margin for spacing */
+    }
+    
+    .button_small {
+      flex: 1; /* Allow buttons to grow and take equal space */
+      margin: 0 0.5rem; /* Add margin between buttons */
+    }
+    
+
+    

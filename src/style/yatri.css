@@ -1,0 +1,185 @@
+.yatri {
+    margin: 0 23px;
+    margin-bottom: 100px;
+}
+
+.heading_yatri_laptop {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(88, 88, 88, 1);
+    line-height: 89.1px;
+    margin-bottom: 44px;
+}
+
+.heading_yatri_phones {
+    display: none;
+}
+
+.yatri_container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23px;
+}
+
+.yatri_img img {
+    width: 580px;
+}
+
+.yatri_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 30px;
+    justify-content: stretch
+}
+
+.yatri_item img {
+    width: 66px;
+    height: 62.4px;
+}
+
+
+.yatri_context div:nth-child(1) {
+    color: rgba(33, 105, 0, 1);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Poppins;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.yatri_context div:nth-child(2) {
+    color: rgba(88, 88, 88, 1);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+
+}
+
+/* @media screen and (max-width: 1220px) {
+    .yatri {
+        margin-top: 15%;
+    }
+
+    .yatri_container {
+        flex-direction: column;
+    }
+
+    .heading_yatri_phones {
+        font-size: 60px;
+        font-weight: 500;
+        color: rgba(88, 88, 88, 1);
+        line-height: 45px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .heading_yatri_laptop {
+        display: none;
+    }
+.yatri_img{
+    display: flex;
+    justify-content: center
+}
+    .yatri_img img {
+        min-width: 30%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .yatri {
+        margin-top: 45%;
+    }
+
+} */
+.text_container {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Ensure the container covers the full width */
+    padding: 20px; /* Add padding for spacing */
+    text-align: justify; /* Justify text for the paragraph */
+    background-color: #f8f8f8; /* Optional: Set a background color */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  
+  .text_container h1 {
+    color: rgb(57, 51, 51); /* Set heading color to gray */
+    font-weight: bold; /* Make heading bold */
+    margin-bottom: 15px; /* Add space below the heading */
+    text-align: center; /* Center align the heading */
+    width: 100%; /* Ensure the heading covers the full width */
+  }
+  
+  .text_container p {
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure paragraph covers the full width */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text_container h1 {
+      font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+    
+    .text_container p {
+      font-size: 14px; /* Adjust paragraph size for smaller screens */
+      padding: 0 10px; /* Add horizontal padding for smaller screens */
+    }
+  }
+  
+@media screen and (max-width: 800px) {
+    .yatri{
+        margin:0 1px ;
+        margin-bottom: 35px;
+    }
+    .heading_yatri_phones {
+        font-size: 30px;
+        font-weight: 500;
+        color: rgba(88, 88, 88, 1);
+        line-height: 45px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .heading_yatri_laptop {
+        display: none;
+    }
+
+    .yatri_container {
+        flex-direction: column;
+    }
+
+    .yatri_img img {
+        width: 294px;
+    }
+.yatri_items_container{
+
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+}
+    .yatri_item {
+      margin-bottom: 8px;
+      gap: 10px;
+    }
+.yatri_item img {
+    width: 15.04px;
+    height: 26.7px;
+}
+    .yatri_context div:nth-child(1) {
+        font-size: 7.37px;
+        line-height: 11.06px;
+    }
+
+    .yatri_context div:nth-child(2) {
+        font-size: 5.9px;
+        line-height: 8.85px;
+    }
+}
